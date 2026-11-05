@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body { width: 260px; margin: 0; font-family: -apple-system, "PingFang SC", sans-serif; background: #151924; color: #e8ebf2; }
+    .wrap { padding: 14px; }
+    h1 { font-size: 14px; margin: 0 0 4px; display: flex; align-items: center; gap: 6px; }
+    h1 i { width: 9px; height: 9px; border-radius: 50%; background: #4f6bff; }
+    #status { font-size: 12px; color: #9aa3b5; margin-bottom: 12px; line-height: 1.5; }
+    #toggle { width: 100%; padding: 9px 0; font-size: 13px; font-weight: 600; border: none; border-radius: 8px; cursor: pointer; background: #4f6bff; color: #fff; }
+    #toggle[data-on="true"] { background: #333a4d; color: #cdd3e1; }
+    #toggle:disabled { opacity: .5; cursor: default; }
+    .tips { margin-top: 12px; font-size: 11px; color: #6b7487; line-height: 1.7; border-top: 1px solid #2a3040; padding-top: 10px; }
+    .tips b { color: #9aa3b5; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1><i></i>Web Edit</h1>
+    <div id="status">检查中…</div>
+    <button id="toggle">开启编辑</button>
+    <div class="tips">
+      <b>快捷键</b>：Alt+Shift+E 开/关编辑，Esc 逐级退出，Ctrl+S 保存<br>
+      <b>操作</b>：单击选中 · 拖拽移动 · 手柄缩放 · 双击改字 · 方向键微调<br>
+      <b>本地文件</b>：需在扩展详情开启「允许访问文件网址」
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Edit 测试页</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; color: #222; background: #f5f6fa; }
+    .nav { display: flex; align-items: center; justify-content: space-between; padding: 16px 40px; background: #fff; border-bottom: 1px solid #e8e8ef; }
+    .nav .logo { font-size: 18px; font-weight: 700; color: #4f6bff; }
+    .nav .links a { margin-left: 24px; color: #555; text-decoration: none; font-size: 14px; }
+    .hero { text-align: center; padding: 72px 20px; }
+    .hero h1 { font-size: 40px; margin-bottom: 16px; }
+    .hero p { color: #666; font-size: 16px; margin-bottom: 28px; }
+    .btn { display: inline-block; padding: 12px 32px; background: #4f6bff; color: #fff; border: none; border-radius: 8px; font-size: 15px; cursor: pointer; }
+    .cards { display: flex; gap: 24px; justify-content: center; padding: 0 40px 60px; flex-wrap: wrap; }
+    .card { background: #fff; border-radius: 12px; padding: 20px; width: 300px; box-shadow: 0 2px 12px rgba(0,0,0,.06); }
+    .card img { width: 100%; border-radius: 8px; margin-bottom: 14px; }
+    .card h3 { font-size: 17px; margin-bottom: 8px; }
+    .card p { font-size: 13px; color: #777; line-height: 1.7; }
+    .quote { background: #fff; padding: 48px 40px; text-align: center; }
+    .quote blockquote { font-size: 20px; color: #444; font-style: italic; }
+    .quote cite { display: block; margin-top: 12px; font-size: 13px; color: #999; }
+    form.subscribe { display: flex; gap: 10px; justify-content: center; padding: 40px; background: #eef0f7; }
+    form.subscribe input { padding: 10px 14px; border: 1px solid #ccd; border-radius: 8px; font-size: 14px; width: 280px; }
+    footer { text-align: center; padding: 28px; color: #999; font-size: 13px; }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <span class="logo">DemoSite</span>
+    <span class="links"><a href="#">首页</a><a href="#">产品</a><a href="#">文档</a><a href="#">关于</a></span>
+  </nav>
+
+  <section class="hero">
+    <h1>构建你的下一个想法</h1>
+    <p>这是一个用于测试 Web Edit 插件的示例页面，试试选中、拖拽、缩放与文字编辑。</p>
+    <button class="btn">立即开始</button>
+  </section>
+
+  <section class="cards">
+    <div class="card">
+      <img src="https://picsum.photos/seed/we1/560/320" alt="配图一" width="560" height="320">
+      <h3>可视化编辑</h3>
+      <p>像画图软件一样直接在页面上调整元素位置、尺寸与样式，所见即所得。</p>
+    </div>
+    <div class="card">
+      <img src="https://picsum.photos/seed/we2/560/320" alt="配图二" width="560" height="320">
+      <h3>直接写回文件</h3>
+      <p>修改完成后一键保存，直接覆盖原 HTML 文件，无需手动复制粘贴源码。</p>
+    </div>
+    <div class="card">
+      <img src="https://picsum.photos/seed/we3/560/320" alt="配图三" width="560" height="320">
+      <h3>安全可撤销</h3>
+      <p>每一步操作都记录快照，Ctrl+Z 随时回退，不怕改坏页面结构。</p>
+    </div>
+  </section>
+
+  <section class="quote">
+    <blockquote>"简洁是设计的核心，页面编辑也应该如此。"</blockquote>
+    <cite>—— 某位设计师</cite>
+  </section>
+
+  <form class="subscribe" onsubmit="return false">
+    <input type="email" placeholder="输入邮箱订阅更新">
+    <button class="btn" type="submit">订阅</button>
+  </form>
+
+  <footer>© 2026 DemoSite · Web Edit 插件测试页</footer>
+</body>
+</html>
